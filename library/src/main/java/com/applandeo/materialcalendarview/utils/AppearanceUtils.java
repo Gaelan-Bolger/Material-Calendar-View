@@ -40,35 +40,19 @@ public final class AppearanceUtils {
     }
 
     public static void setHeaderColor(View view, int color) {
-        if (color == 0) {
-            return;
-        }
-
         ConstraintLayout mCalendarHeader = (ConstraintLayout) view.findViewById(R.id.calendarHeader);
         mCalendarHeader.setBackgroundColor(color);
     }
 
     public static void setHeaderLabelColor(View view, int color) {
-        if (color == 0) {
-            return;
-        }
-
         ((TextView) view.findViewById(R.id.currentDateLabel)).setTextColor(color);
     }
 
     public static void setAbbreviationsBarColor(View view, int color) {
-        if (color == 0) {
-            return;
-        }
-
         view.findViewById(R.id.abbreviationsBar).setBackgroundColor(color);
     }
 
     public static void setPagesColor(View view, int color) {
-        if (color == 0) {
-            return;
-        }
-
         view.findViewById(R.id.calendarViewPager).setBackgroundColor(color);
     }
 
